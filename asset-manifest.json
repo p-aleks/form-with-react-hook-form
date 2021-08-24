@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/form-with-react-hook-form/static/css/main.eebc8b3a.chunk.css",
+    "main.js": "/form-with-react-hook-form/static/js/main.be0a5e88.chunk.js",
+    "main.js.map": "/form-with-react-hook-form/static/js/main.be0a5e88.chunk.js.map",
+    "runtime-main.js": "/form-with-react-hook-form/static/js/runtime-main.2075cbf8.js",
+    "runtime-main.js.map": "/form-with-react-hook-form/static/js/runtime-main.2075cbf8.js.map",
+    "static/css/2.c490997a.chunk.css": "/form-with-react-hook-form/static/css/2.c490997a.chunk.css",
+    "static/js/2.8298c02a.chunk.js": "/form-with-react-hook-form/static/js/2.8298c02a.chunk.js",
+    "static/js/2.8298c02a.chunk.js.map": "/form-with-react-hook-form/static/js/2.8298c02a.chunk.js.map",
+    "index.html": "/form-with-react-hook-form/index.html",
+    "static/css/2.c490997a.chunk.css.map": "/form-with-react-hook-form/static/css/2.c490997a.chunk.css.map",
+    "static/css/main.eebc8b3a.chunk.css.map": "/form-with-react-hook-form/static/css/main.eebc8b3a.chunk.css.map",
+    "static/js/2.8298c02a.chunk.js.LICENSE.txt": "/form-with-react-hook-form/static/js/2.8298c02a.chunk.js.LICENSE.txt",
+    "static/media/eyeIcon.69a86a9f.svg": "/form-with-react-hook-form/static/media/eyeIcon.69a86a9f.svg",
+    "static/media/femaleIcon.b65a885b.svg": "/form-with-react-hook-form/static/media/femaleIcon.b65a885b.svg",
+    "static/media/maleIcon.ca979ef2.svg": "/form-with-react-hook-form/static/media/maleIcon.ca979ef2.svg",
+    "static/media/otherIcon.914321e6.svg": "/form-with-react-hook-form/static/media/otherIcon.914321e6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2075cbf8.js",
+    "static/css/2.c490997a.chunk.css",
+    "static/js/2.8298c02a.chunk.js",
+    "static/css/main.eebc8b3a.chunk.css",
+    "static/js/main.be0a5e88.chunk.js"
+  ]
+}

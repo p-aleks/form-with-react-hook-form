@@ -74,10 +74,6 @@
         }
     }
 
-    &_body {
-
-    }
-
     &_gender {
         &_cardsWrapper {
             display: flex;
@@ -92,9 +88,6 @@
                 visibility: hidden;
             }
         }
-    }
-
-    &_email {
     }
 
     &_password {
@@ -126,7 +119,6 @@
         line-height: 22px;
         padding: 24px;
         width: 100%;
-
 
         &:hover {
             background: #4DB252;

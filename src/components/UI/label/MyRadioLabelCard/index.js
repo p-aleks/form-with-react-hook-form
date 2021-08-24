@@ -4,7 +4,7 @@ import './style.scss';
 const MyRadioLabelCard = ({ text, Icon }) => {
     return (
         <div className="card">
-            <Icon />
+            <Icon/>
             <span>
                 {text}
             </span>

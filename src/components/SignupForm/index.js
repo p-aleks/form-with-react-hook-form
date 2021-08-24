@@ -1,13 +1,13 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Col, Form, Row } from 'react-bootstrap';
-import './style.scss';
 import MyRadioLabelCard from '../UI/label/MyRadioLabelCard';
 import { EyeIcon, FemaleIcon, MaleIcon, OtherIcon } from '../../assets';
+import './style.scss';
 
 const SignupForm = () => {
     const { formState: { errors }, handleSubmit, register, watch } = useForm();
-    const [passwordVisible, setPasswordVisible] = React.useState({create: false, confirm: false});
+    const [passwordVisible, setPasswordVisible] = React.useState({ create: false, confirm: false });
     const password = React.useRef({});
     password.current = watch('password.create', '');
 
@@ -15,17 +15,17 @@ const SignupForm = () => {
         e.stopPropagation();
         e.preventDefault();
         setPasswordVisible(state => {
-            return {...state, [field]: !state[field]};
+            return { ...state, [field]: !state[field] };
         });
     };
 
     const validateEmail = (value) => {
         const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return EMAIL_REGEX.test(value.toLowerCase()) || "Please, enter valid email address.";
+        return EMAIL_REGEX.test(value.toLowerCase()) || 'Please, enter valid email address.';
     };
 
     const validatePassword = (value) => {
-        return value === password.current || "Passwords do not match!";
+        return value === password.current || 'Passwords do not match!';
     };
 
     const onSubmit = (data) => {
@@ -62,7 +62,7 @@ const SignupForm = () => {
                                 id="male"
                                 name="gender"
                                 value="male"
-                                {...register("gender")}
+                                {...register('gender')}
                             />
                             <Form.Check
                                 className="p-0"
@@ -76,7 +76,7 @@ const SignupForm = () => {
                                 id="female"
                                 name="gender"
                                 value="female"
-                                {...register("gender")}
+                                {...register('gender')}
                             />
                             <Form.Check
                                 className="p-0"
@@ -90,7 +90,7 @@ const SignupForm = () => {
                                 id="other"
                                 name="gender"
                                 value="other"
-                                {...register("gender")}
+                                {...register('gender')}
                             />
                         </fieldset>
                     </Form.Group>
@@ -100,7 +100,7 @@ const SignupForm = () => {
                         <Form.Control
                             type="text"
                             placeholder="johnsmith@mail.com"
-                            {...register("email", { required: "E-mail is required.", validate: validateEmail })}
+                            {...register('email', { required: 'E-mail is required.', validate: validateEmail })}
                             isInvalid={errors.email}
                         />
                         <Form.Control.Feedback type="invalid">
@@ -116,15 +116,15 @@ const SignupForm = () => {
                                     type={passwordVisible.create ? 'text' : 'password'}
                                     placeholder="∗∗∗∗∗∗∗∗∗∗∗"
                                     {...register(
-                                        "password.create",
+                                        'password.create',
                                         {
-                                            required: "Password is required.",
+                                            required: 'Password is required.',
                                             minLength: {
                                                 value: 6,
-                                                message: "Password should be 6 characters or longer."
+                                                message: 'Password should be 6 characters or longer.'
                                             }
-                                        }
-                                    )}
+                                        })
+                                    }
                                     isInvalid={errors.password?.create}
                                 />
                                 <button onClick={(e) => togglePasswordVisible(e, 'create')}
@@ -143,9 +143,9 @@ const SignupForm = () => {
                                     type={passwordVisible.confirm ? 'text' : 'password'}
                                     placeholder="∗∗∗∗∗∗∗∗∗∗∗"
                                     {...register(
-                                        "password.confirm",
+                                        'password.confirm',
                                         {
-                                            required: "Password confirmation is required.",
+                                            required: 'Password confirmation is required.',
                                             validate: validatePassword
                                         }
                                     )}
